@@ -98,7 +98,7 @@ GET /cars/transactions/_search
    }
 }
 ```  
-## Query-part2 ##  
+## Aggregations-part2 ##  
 
 | Item | Description | Remark |
 | :--: | :---------- | :----: |
@@ -107,15 +107,6 @@ GET /cars/transactions/_search
 |	cardinality | 近似聚合，計算某個欄位不同值的數量 | ex.7, [Example](https://www.elastic.co/guide/cn/elasticsearch/guide/current/cardinality.html) |
 |  | field: 要計算的欄位 |  |
 |  | precision_threshold: 0~40000，代表真正個數在幾以下的可以保持將近100%準確度，例100可保證返回值在100以下的正確率將近100%，但在100情況下即使維一值有百萬誤差也在5%之內 |  |
-| percentiles | 對某欄位計算其百分位數 | ex.8, [Example](https://www.elastic.co/guide/cn/elasticsearch/guide/current/_building_bar_charts.html) |
-|  | field: 要計算的欄位 |  |
-|  | percents: 要返回的百分位數，預設為[1, 5, 25, 50, 75, 95, 99] |  |
-|  | values: 返回輸入的值為第幾百分位 |  |
-| significant_terms | 針對某欄位找出異常指標 | ex.9, [Example](https://www.elastic.co/guide/cn/elasticsearch/guide/current/_significant_terms_demo.htm) |
-|  | field: 要找的欄位 |  |
-|  | size: 返回的文檔個數 |  |
-
-  
 ##### ex.5 #####
 ```js
 GET /cars/transactions/_search
@@ -187,7 +178,7 @@ GET /cars/transactions/_search
     }
 }
 ```  
-## Query-part3 ##  
+## Aggregations-part3 ##  
 
 | Item | Description | Remark |
 | :--: | :---------- | :----: |
@@ -198,8 +189,6 @@ GET /cars/transactions/_search
 | significant_terms | 針對某欄位找出異常指標 | ex.9, [Example](https://www.elastic.co/guide/cn/elasticsearch/guide/current/_significant_terms_demo.htm) |
 |  | field: 要找的欄位 |  |
 |  | size: 返回的文檔個數 |  |
-
-  
 ##### ex.8-1 #####
 ```js
 GET /website/logs/_search
