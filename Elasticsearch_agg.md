@@ -186,7 +186,7 @@ GET /cars/transactions/_search
 |  | field: 要計算的欄位 |  |
 |  | percents: 要返回的百分位數，預設為[1, 5, 25, 50, 75, 95, 99] |  |
 |  | values: 返回輸入的值為第幾百分位 |  |
-| significant_terms | 針對某欄位找出異常指標 | ex.9, [Example](https://www.elastic.co/guide/cn/elasticsearch/guide/current/_significant_terms_demo.htm) |
+| significant_terms | 針對某欄位找出異常指標 | ex.9, [Example](https://www.elastic.co/guide/cn/elasticsearch/guide/current/_significant_terms_demo.html) |
 |  | field: 要找的欄位 |  |
 |  | size: 返回的文檔個數 |  |
 ##### ex.8-1 #####
