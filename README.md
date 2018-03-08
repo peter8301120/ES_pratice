@@ -1,8 +1,9 @@
 # Elasticsearch #  
 
-| Item | Description | Right Aligned |
+## Query ##
+| Item | Description | Remark |
 |:---:|:---------------:|:-----:|
-| col 3 is      | some wordy text | $1600 |
-| col 2 is      | centered        |   $12 |
-| zebra stripes | are neat        |    $1 |
-| test | 測試        |    $3333 |
+| from | 從第幾個匹配文檔返回查詢 | ex.1 |
+| size | 一次返回多少個文檔 | ex.1 |
+| match_all(空查詢) | 找出所有文檔 | ex.2 |
+| -	 | 測試        |    $3333 |
