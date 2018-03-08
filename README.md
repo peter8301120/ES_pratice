@@ -16,4 +16,4 @@
 |  | filter(根據條件查詢，不計算文檔得分速度較快) | ex.1 |
 | term, terms | 精確值查詢類似filter, 但是會評分 | ex.1 |
 | exists, missing | 查詢某些欄位是否有值 | ex.1 |
-| constant_score | 不評分的查詢可取代只有filter的bool查詢 | ex.1 |
+| constant_score | 不評分的查詢可取代只有filter的bool查詢 | ex.1 |  
