@@ -1,6 +1,4 @@
-### Elasticsearch
-=================  
-
+# Elasticsearch #  
 
 This is a regular paragraph.
 
