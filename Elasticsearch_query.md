@@ -56,9 +56,9 @@ GET /_search
 | :--: | :---------- | :----: |
 | range | 找出符合範圍文檔的查詢gt, gte, lt, lte | ex.5 |
 | bool | 複合查詢，可含多個查詢語句 | ex.6 |
-|  | must, must_not(必定需要符合的條件) |  |
-|  | should, should_not(不一定要符合但符合時得分增加) |  |
-|  | filter(根據條件查詢，不計算文檔得分速度較快) |  |
+|  | must, must_not: 必定需要符合的條件 |  |
+|  | should, should_not: 不一定要符合但符合時得分增加 |  |
+|  | filter: 根據條件查詢，不計算文檔得分速度較快 |  |
 | term, terms | 精確值查詢類似filter, 但是會評分 | ex.7 |
 | exists, missing | 查詢某些欄位是否有值 | ex.8 |
 | constant_score | 不評分的查詢可取代只有filter的bool查詢 | ex.9 | 
